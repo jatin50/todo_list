@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo_list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>TODO-LIST</div>
+    </header>
+<form class=" form">
+    <input [type="text"]:focus{
+        outline:none;
+        border:none;
+        box-shadow:none;
+    } id="input" placeholder="add your todos">
+<button class="add">add</button>
+</form>
+<div class="todolist">
+    <div class="task">
+        <ul class="todo-ul">
+        </ul>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

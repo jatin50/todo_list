@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family:'Times New Roman', Times, serif
+}
+body{
+    height: 100vh;
+    width: 100vw;
+background: radial-gradient(circle,rgb(75, 126, 244) 0%, rgba(169, 192, 217, 0.696) 100%);
+}
+header{
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: 600;
+    margin:  0 20px 0  0;
+    color: white;
+background: linear-gradient(90deg, rgb(3, 1, 50) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        height: 10vh;
+
+    }
+ #input{
+height: 5vh;
+width: 40vw;
+border: none;
+cursor: text; 
+border-radius: 10px;
+}
+button{
+    height:5vh ;
+    width: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+}
+input[type="checkbox"]:checked~.todo-li{
+    text-decoration: line-through;
+}
+ul li{
+    height: 8vh;
+    border: 2px solid rgba(32, 3, 26, 0.299);
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+background-color: rgba(255, 255, 255, 0.338);
+font-size: 19px;
+  border-radius: 10px;
+}
+.todo-ul input[type="checkbox"]:checked +span{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.checkbox{
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+}
+.trash{
+position: absolute;
+right: 4vw;
+background-color:rgba(255, 255, 255, 0);
+height: 8vh;
+width: 50px;
+margin-right: 0;
+}
+.trash img{
+    height: 7vh;
+}
